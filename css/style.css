@@ -1,0 +1,85 @@
+/* Responsive: รูปหนังสือบน Hero */
+.hero-book {
+    width: 100%;
+    height: auto;
+}
+
+/* Footer */
+.footer-row {
+    align-items: stretch;
+}
+
+.footer-col {
+    position: relative;
+    padding: 0 20px;
+}
+
+/* เส้นแบ่งแนวตั้งบนจอใหญ่ */
+@media (min-width: 768px) {
+    .footer-col:not(:last-child) {
+        border-right: 1px solid #DEE2E6;
+    }
+}
+
+/* จอเล็ก: แบ่งเป็นเส้นนอน */
+@media (max-width: 767.98px) {
+    .footer-col {
+        padding: 25px 15px;
+        border-right: none !important;
+    }
+
+    .footer-col:not(:last-child) {
+        border-bottom: 1px solid #DEE2E6;
+    }
+}
+
+/* มือถือแคบ: ลดขนาดข้อความหัวข้อ Footer */
+@media (max-width: 575.98px) {
+    footer h2 {
+        font-size: 1.25rem;
+    }
+
+    footer h3 {
+        font-size: 1rem;
+        overflow-wrap: anywhere;
+    }
+}
+
+/* ===== FAQ : กรอบใหญ่ครอบทั้งหมด ===== */
+.faq-card {
+    width: 100%;
+    max-width: 900px;
+    background-color: #2b3035;   /* สว่างกว่าพื้นหลังเว็บเล็กน้อย ให้เห็นกรอบ */
+    border: 1px solid #495057;
+    border-radius: 24px;
+    padding: 32px 24px;
+    color: #fff;
+}
+
+.faq-title {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: #B4A7D6;
+    margin-bottom: 24px;
+}
+
+.faq-item h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #B4A7D6;
+    margin-bottom: 10px;
+}
+
+.faq-item p {
+    font-size: 1.05rem;
+    font-weight: 500;
+    line-height: 1.7;
+    margin: 0;
+}
+
+@media (max-width: 576px) {
+    .faq-card { border-radius: 18px; padding: 24px 12px; }
+    .faq-title { font-size: 1.4rem; }
+    .faq-item h3 { font-size: 1.1rem; }
+    .faq-item p { font-size: 0.95rem; }
+}
